@@ -17,7 +17,7 @@
 	var ids = getId();
 
 	$.ajax({
-			url: 'http://localhost:9090/api/getproduct',
+			url: 'http://101.81.189.170:9090/api/getproduct',
 			type: 'get',
 			data: {
 				productid: ids
@@ -45,7 +45,7 @@
 		});
 
 	$.ajax({
-			url: 'http://localhost:9090/api/getproductcom',
+			url: 'http://101.81.189.170:9090/api/getproductcom',
 			type: 'get',
 			data: {
 				productid: ids
