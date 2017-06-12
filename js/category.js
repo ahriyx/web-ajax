@@ -3,7 +3,7 @@
 
 	function category(id) {
 		$.ajax({
-			url: 'http://localhost:9090/api/getcategory',
+			url: 'http://101.81.189.170:9090/api/getcategory',
 			type: 'get',
 			data: {
 					titleid: id
@@ -22,7 +22,7 @@
 
 	//通过ajax
 	$.ajax({
-		url: 'http://localhost:9090/api/getcategorytitle',
+		url: 'http://101.81.189.170:9090/api/getcategorytitle',
 		type: 'get',
 		dataType: 'json',
 		success : function (data) {
