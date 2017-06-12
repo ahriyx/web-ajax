@@ -3,7 +3,7 @@
 	function getData(baseUrl,callback) {
 
 		$.ajax({
-			url: 'http:/101.81.189.170:9090/api/' + baseUrl,
+			url: 'http://101.81.189.170:9090/api/' + baseUrl,
 			type: 'get',
 			dataType: 'json',
 			success : function (data) {
