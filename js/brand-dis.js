@@ -2,7 +2,7 @@
 
 	function category(id) {
 			$.ajax({
-				url: 'http://localhost:9090/api/getbrand',
+				url: 'http://101.81.189.170:9090/api/getbrand',
 				type: 'get',
 				data: {
 						brandtitleid: id
@@ -21,7 +21,7 @@
 	function comment(id) {
 
 		$.ajax({
-			url: 'http://localhost:9090/api/getbrandproductlist',
+			url: 'http://101.81.189.170:9090/api/getbrandproductlist',
 			type: 'get',
 			data: {
 					brandtitleid: id,
@@ -38,7 +38,7 @@
 
 	function newComment(id) {
 		$.ajax({
-			url: 'http://localhost:9090/api/getproductcom',
+			url: 'http://101.81.189.170:9090/api/getproductcom',
 			type: 'get',
 			data: {
 					productid: id
