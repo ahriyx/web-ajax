@@ -3,7 +3,7 @@
 
 	//通过ajax
 	$.ajax({
-		url: 'http://localhost:9090/api/getbrandtitle',
+		url: 'http://101.81.189.170:9090/api/getbrandtitle',
 		type: 'get',
 		dataType: 'json',
 		success : function (data) {
