@@ -2,7 +2,7 @@
 
 
 	$.ajax({
-		url: 'http://localhost:9090/api/getbaicaijiatitle',
+		url: 'http://101.81.189.170:9090/api/getbaicaijiatitle',
 		type: 'get',
 		dataType: 'json',
 		success : function (data) {
