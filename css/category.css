@@ -1,0 +1,124 @@
+body {
+  background-color: #F1F1F1; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+[data-dpr='1'] div {
+  font-size: 16px; }
+
+[data-dpr='2'] div {
+  font-size: 32px; }
+
+[data-dpr="3"] div {
+  font-size: 48px; }
+
+header {
+  height: 1.293rem;
+  background-color: #FF841D; }
+  header .logo {
+    width: 4.947rem;
+    height: 0.667rem;
+    margin: 0.4rem 0 0 0.44rem; }
+  header .download img {
+    width: 0.907rem;
+    height: 0.907rem;
+    margin: 0.173rem 0.173rem 0 0; }
+
+.search {
+  height: 1.373rem;
+  background-color: #fff; }
+  .search .input {
+    padding: 0.28rem 0 0 0.173rem; }
+    .search .input > input {
+      width: 7.56rem;
+      height: 0.813rem;
+      border-radius: 0.4rem;
+      background-color: #F1F1F1;
+      color: #727271;
+      text-indent: 1.5em;
+      outline: none; }
+  .search .btn {
+    margin-left: 8.04rem;
+    padding-top: 0.28rem; }
+    .search .btn input {
+      width: 1.653rem;
+      height: 0.827rem;
+      border-radius: 0.41rem;
+      background-color: #FF841D;
+      color: #fff; }
+
+.border {
+  border: 1px solid #ccc;
+  border-left: none; }
+
+.hide {
+  display: none; }
+
+.navs {
+  display: none; }
+
+.category {
+  border: 1px solid #ccc;
+  border-radius: 0.267rem; }
+  .category .item h2 {
+    padding: 0 0.4rem;
+    font-size: 0.533rem;
+    line-height: 1.067rem;
+    border-bottom: 1px solid #ccc; }
+    .category .item h2 img {
+      width: 0.613rem;
+      height: 0.507rem;
+      margin-top: 0.24rem; }
+  .category .item .show {
+    display: block; }
+  .category .item ul {
+    background-color: #fff; }
+  .category .item li {
+    width: 33.3333%;
+    height: 1.067rem;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 1.067rem; }
+    .category .item li a {
+      color: #000; }
+
+.mt {
+  height: 0.667rem;
+  background-color: #fff; }
+
+.register {
+  height: 0.84rem;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none; }
+  .register a {
+    display: block;
+    line-height: 0.84rem;
+    float: left;
+    width: 30%;
+    text-align: center;
+    color: #000;
+    font-weight: 400; }
+  .register .return {
+    width: 39%; }
+    .register .return img {
+      width: 0.4rem;
+      display: inline-block;
+      vertical-align: middle; }
+
+.borderRight {
+  border-right: 1px solid #ccc; }
+
+footer {
+  padding: 0.4rem 0; }
+  footer p {
+    text-align: center; }
+    footer p .red {
+      color: red; }
+
+/*# sourceMappingURL=category.css.map */

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/baicai.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="title">白菜价-淘宝内部券</h1><a href="#" class="download"><img src="imgs/header_app.png" alt=""></a>
+    </header>
+    <nav>
+      <div class="inner">
+        <ul class="clearfix"></ul>
+      </div>
+    </nav>
+    <div class="content"></div>
+    <div class="register clearfix"><a href="#" class="login borderRight">登录</a><a href="#" class="reg borderRight">注册</a><a href="#" class="return"><img src="imgs/top.png" alt="">返回顶部</a></div>
+    <footer>
+      <p><a class="red">手机APP下载</a>慢慢买手机版<span>--掌上比价平台</span></p>
+      <p>m.manman.buy.com</p>
+    </footer>
+    <script id="template" type="text/html">{{each items as item index}}
+      <li><a href="javascript:void(0)">{{item.title}}</a></li>{{/each}}
+    </script>
+    <script id="template1" type="text/html">{{each items as item index}}
+      <div class="item">
+        <div class="leftImg fl">{{#item.productImg}}</div>
+        <div class="main">
+          <h2 class="one-txt-cut">{{#item.productName}}</h2>
+          <p>{{#item.productPrice}}</p>{{#item.productCouponRemain}}
+          {{#item.productCoupon}}
+          {{#item.productHref}}
+        </div>
+      </div>{{/each}}
+    </script>
+    <script src="js/template.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/baicai.js"></script>
+  </body>
+</html>

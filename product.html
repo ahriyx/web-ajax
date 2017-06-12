@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/product.css">
+  </head>
+  <body>
+  </body>
+  <header>
+    <h1 class="title">国内折扣</h1><a href="#" class="download"><img src="imgs/header_app.png" alt=""></a>
+  </header>
+  <div class="content">
+  </div>
+  <div class="down"><img src="imgs/mmbweixin2.png" alt=""></div>
+  <div class="comment">
+    <div class="users"></div>
+  </div>
+  <div class="register clearfix"><a href="#" class="login borderRight">登录</a><a href="#" class="reg borderRight">注册</a><a href="#" class="return"><img src="imgs/top.png" alt="">返回顶部</a></div>
+  <footer>
+    <p><a class="red">手机APP下载</a>慢慢买手机版<span>--掌上比价平台</span></p>
+    <p>m.manman.buy.com</p>
+  </footer>
+  <script id="template" type="text/html">{{each items as item index}}
+    <h1>{{item.productName}}</h1>
+    <p><span>{{item.productFrom}}&nbsp;</span><span>{{item.productTime}}&nbsp;</span><span>{{item.productTips}}</span></p>{{#item.productImgSm}}
+    <div class="con">
+      {{item.productInfo}}
+      {{item.productInfo1}}
+    </div>
+    <div class="bigImg">
+      <div class="big">{{#item.productImg2}}</div>
+      <div class="city">{{#item.productCity}}</div>
+      <div class="buy"><a href="#" class="btn">前往购买</a></div>
+    </div>{{/each}}
+  </script>
+  <script src="js/template.js"></script>
+  <script src="js/zepto.min.js"></script>
+  <script src="js/product.js"></script>
+</html>

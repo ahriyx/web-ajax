@@ -1,0 +1,81 @@
+[data-dpr='1'] div {
+  font-size: 16px; }
+
+[data-dpr='2'] div {
+  font-size: 32px; }
+
+[data-dpr="3"] div {
+  font-size: 48px; }
+
+body {
+  background: #F7F7F7; }
+
+header {
+  height: 1.173rem;
+  background-color: #FF841D;
+  position: relative; }
+  header .title {
+    line-height: 1.173rem;
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    font-weight: 700; }
+  header .download {
+    width: 0.907rem;
+    height: 0.907rem;
+    position: absolute;
+    right: 0.267rem;
+    top: 0.133rem; }
+
+.main {
+  background-color: #fff;
+  padding: 0.267rem 0 0 1.133rem; }
+  .main .inner {
+    width: 8.0rem; }
+  .main .shop {
+    margin: 0 0.2rem 0.2rem 0;
+    float: left;
+    padding: 0.3rem 0.2rem;
+    box-sizing: border-box;
+    border: 1px solid #B9B9B9;
+    background-color: #F4F4F4; }
+    .main .shop img {
+      width: 0.44rem;
+      height: 0.44rem;
+      margin-top: 0.133rem;
+      margin-right: 0.133rem;
+      margin-left: 0.133rem; }
+
+.register {
+  height: 0.84rem;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  background-color: #EFEFEF; }
+  .register a {
+    display: block;
+    line-height: 0.84rem;
+    float: left;
+    width: 30%;
+    text-align: center;
+    color: #000;
+    font-weight: 400; }
+  .register .return {
+    width: 39%; }
+    .register .return img {
+      width: 0.4rem;
+      display: inline-block;
+      vertical-align: middle; }
+
+.borderRight {
+  border-right: 1px solid #ccc; }
+
+footer {
+  padding: 0.4rem 0;
+  background-color: #EFEFEF; }
+  footer p {
+    text-align: center; }
+    footer p .red {
+      color: red; }
+
+/*# sourceMappingURL=nav.css.map */

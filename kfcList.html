@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/kfcList.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="title">优惠券</h1><a href="#" class="download"><img src="imgs/header_app.png" alt=""></a>
+    </header>
+    <div class="title">
+      <h2>点餐前请出示手机优惠券，即可享受优惠</h2>
+    </div>
+    <div class="products"></div>
+    <div class="register clearfix"><a href="#" class="login borderRight">登录</a><a href="#" class="reg borderRight">注册</a><a href="#" class="return"><img src="imgs/top.png" alt="">返回顶部</a></div>
+    <footer>
+      <p><a class="red">手机APP下载</a>慢慢买手机版</p>
+      <p>m.manman.buy.com</p>
+    </footer>
+    <script id="template1" type="text/html">{{each items as item index}}
+      <div class="item"><a href="#">
+          <div class="pro-img">{{#item.couponProductImg}}</div>
+          <div class="pro-name">
+            <h2 class="txt-cut">{{item.couponProductName}}</h2>
+            <h3 class="pro-price one-txt-cut">¥19</h3>
+            <h4 class="txt-cut">{{item.couponProductTime}}&nbsp;&nbsp;</h4>
+          </div></a></div>{{/each}}	
+    </script>
+    <script src="js/template.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/kfcList.js"></script>
+  </body>
+</html>

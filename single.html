@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/single.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="title">凑单品</h1><a href="#" class="download"><img src="imgs/header_app.png" alt=""></a>
+    </header>
+    <nav>
+      <ul id="nav">
+        <li data-id="0"> <a href="javascript:">京东</a></li>
+        <li data-id="1"> <a href="javascript:">华北</a></li>
+        <li> <a href="javascript:">全部价格</a></li>
+      </ul>
+      <div class="list"></div>
+    </nav>
+    <div class="products">
+      <div class="inner clearfix">
+      </div>
+    </div>
+    <div class="register clearfix"><a href="#" class="login borderRight">登录</a><a href="#" class="reg borderRight">注册</a><a href="#" class="return"><img src="imgs/top.png" alt="">返回顶部</a></div>
+    <footer>
+      <p><a class="red">手机APP下载</a>慢慢买手机版<span>--掌上比价平台</span></p>
+      <p>m.manman.buy.com</p>
+    </footer>
+    <script id="template" type="text/html">{{each items as item index}}
+      <div data-id="{{item.shopId}}">{{item.shopName}}</div>{{/each}}
+    </script>
+    <script id="template1" type="text/html">{{each items as item index}}
+      <div data-id="{{item.areaId}}">{{item.areaName}}</div>{{/each}}
+    </script>
+    <script id="template2" type="text/html">{{each items as item index}}
+      <div class="item"><a href="#" class="imag"><img src="{{item.productImg}}" alt=""></a>
+        <h2 class="name one-txt-cut">{{item.productName}}</h2>
+        <p class="clearfix"><span class="fl">{{item.productPrice}}</span><a href="#" class="fr">去凑单</a></p>
+      </div>{{/each}}
+    </script>
+    <script src="js/template.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/single.js"></script>
+  </body>
+</html>

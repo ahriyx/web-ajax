@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/content.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo fl"><img src="imgs/header_logo.png" alt=""></div>
+      <div class="download"><img src="imgs/header_app.png" alt="" class="fr"></div>
+    </header>
+    <section class="search">
+      <div class="input fl">
+        <input type="text" value="请输入你想比较的商品">
+      </div>
+      <div class="btn">
+        <input type="submit" value="搜索">
+      </div>
+    </section>
+    <div class="category">
+      <div class="inner">
+        
+      </div>
+    </div>
+    <div class="product">
+    </div>
+    <div class="comment">
+      <h2>网友评价 </h2>
+      <div class="inner"></div>
+      
+      
+      
+    </div>
+    <div class="pro-more"><a href="money.html" class="btn"> <strong>更多用户评价</strong></a></div>
+    <div class="register clearfix"><a href="#" class="login borderRight">登录</a><a href="#" class="reg borderRight">注册</a><a href="#" class="return"><img src="imgs/top.png" alt="">返回顶部</a></div>
+    <footer>
+      <p><a class="red">手机APP下载</a>慢慢买手机版<span>--掌上比价平台</span></p>
+      <p>m.manman.buy.com</p>
+    </footer>
+    <script id="template" type="text/html"><a href="index.html">首页></a><a href="category.html">{{categoryName}}></a><a href="#" class="one-txt-cut">{{productName}}</a><span class="fr"> <a href="#">筛选</a></span></script>
+    <script id="template1" type="text/html">{{each items as item index}}
+      <h1>{{item.productName}}</h1>
+      <div class="proBig">{{#item.productImg}}</div>
+      <div class="price clearfix"><span> <a href="#">比价购买</a></span><span> <a href="#">产品参数</a></span><span> <a href="#">评价(2332)</a></span></div>
+      <div class="buy">{{#item.bjShop}}</div>{{/each}}
+    </script>
+    <script id="template2" type="text/html">{{each items as item index}}
+      <div class="item">
+        <div class="top">
+          <p class="clearfix"><span class="fl">{{item.comName}}</span><span class="fr">{{item.comTime}}</span></p>
+          <p class="clearfix"><span class="fr">{{item.comFrom}}</span></p>
+        </div>
+        <div class="con">{{item.comContent}}</div>
+      </div>{{/each}}
+    </script>
+    <script src="js/template.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/content.js"></script>
+  </body>
+</html>

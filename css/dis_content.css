@@ -1,0 +1,123 @@
+[data-dpr='1'] div {
+  font-size: 16px; }
+
+[data-dpr='2'] div {
+  font-size: 32px; }
+
+[data-dpr="3"] div {
+  font-size: 48px; }
+
+header {
+  height: 1.173rem;
+  background-color: #FF841D;
+  position: relative; }
+  header .title {
+    line-height: 1.173rem;
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    font-weight: 700; }
+  header .download {
+    width: 0.907rem;
+    height: 0.907rem;
+    position: absolute;
+    right: 0.267rem;
+    top: 0.133rem; }
+
+.content {
+  padding: 0.267rem; }
+  .content h1 {
+    font-size: 1.5em;
+    color: #000;
+    font-weight: bold; }
+  .content h2 {
+    color: #FF841D;
+    font-size: 1em; }
+  .content p {
+    padding: 0.4rem 0; }
+  .content .main {
+    font-size: 1em; }
+  .content .bigImg .city {
+    width: 3.8rem;
+    margin: 0 auto;
+    margin-top: 1.067rem;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5); }
+  .content .bigImg .buy {
+    padding: 0.56rem 0.333rem 1.2rem 0.333rem; }
+    .content .bigImg .buy .btn {
+      display: block;
+      height: 0.867rem;
+      background-color: #FF9000;
+      color: #fff;
+      font-size: 1.2em;
+      text-align: center;
+      line-height: 0.867rem; }
+
+.down {
+  padding: 0 0.267rem;
+  margin-bottom: 0.72rem; }
+
+.comment {
+  padding: 0 0.133rem; }
+  .comment h2, .comment .cu-content-pl {
+    margin-bottom: 0.267rem; }
+  .comment .inner, .comment .form {
+    padding: 0 0.05rem;
+    margin-bottom: 0.373rem;
+    border: 1px solid #ccc; }
+    .comment .inner textarea, .comment .form textarea {
+      width: 100%;
+      height: 1.867rem;
+      border: none; }
+    .comment .inner .btto, .comment .inner .ctrl, .comment .form .btto, .comment .form .ctrl {
+      height: 0.96rem;
+      background-color: #FBFBFB; }
+      .comment .inner .btto button, .comment .inner .btto .tjdp, .comment .inner .ctrl button, .comment .inner .ctrl .tjdp, .comment .form .btto button, .comment .form .btto .tjdp, .comment .form .ctrl button, .comment .form .ctrl .tjdp {
+        width: 2.677rem;
+        height: 0.96rem;
+        float: right;
+        font-size: 1.2em;
+        color: #fff;
+        background-color: #FF841D;
+        border: none; }
+  .comment .users .ui-border-b {
+    padding: 0.133rem 0; }
+  .comment .users .userimg {
+    width: 1.573rem;
+    padding: 0 0.267rem;
+    float: left; }
+  .comment .users .yinyong img {
+    width: 1.067rem; }
+
+.register {
+  height: 0.84rem;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none; }
+  .register a {
+    display: block;
+    line-height: 0.84rem;
+    float: left;
+    width: 30%;
+    text-align: center;
+    color: #000;
+    font-weight: 400; }
+  .register .return {
+    width: 39%; }
+    .register .return img {
+      width: 0.4rem;
+      display: inline-block;
+      vertical-align: middle; }
+
+.borderRight {
+  border-right: 1px solid #ccc; }
+
+footer {
+  padding: 0.4rem 0; }
+  footer p {
+    text-align: center; }
+    footer p .red {
+      color: red; }
+
+/*# sourceMappingURL=dis_content.css.map */

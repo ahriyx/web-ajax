@@ -1,0 +1,164 @@
+body {
+  background-color: #F1F1F1; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+[data-dpr='1'] div {
+  font-size: 12px; }
+
+[data-dpr='2'] div {
+  font-size: 24px; }
+
+[data-dpr="3"] div {
+  font-size: 36px; }
+
+header {
+  height: 1.293rem;
+  background-color: #FF841D; }
+  header .logo {
+    width: 4.947rem;
+    height: 0.667rem;
+    margin: 0.4rem 0 0 0.44rem; }
+  header .download img {
+    width: 0.907rem;
+    height: 0.907rem;
+    margin: 0.173rem 0.173rem 0 0; }
+
+.search {
+  height: 1.373rem;
+  background-color: #fff; }
+  .search .input {
+    padding: 0.28rem 0 0 0.173rem; }
+    .search .input > input {
+      width: 7.56rem;
+      height: 0.813rem;
+      border-radius: 0.4rem;
+      background-color: #F1F1F1;
+      color: #727271;
+      text-indent: 1.5em;
+      outline: none; }
+  .search .btn {
+    margin-left: 8.04rem;
+    padding-top: 0.28rem; }
+    .search .btn input {
+      width: 1.653rem;
+      height: 0.827rem;
+      border-radius: 0.41rem;
+      background-color: #FF841D;
+      color: #fff; }
+
+.category .inner {
+  height: 1.067rem;
+  line-height: 1.067rem;
+  padding-left: 0.267rem;
+  border: 1px solid #ccc;
+  background-color: #F6F6F6; }
+  .category .inner a {
+    color: #000; }
+  .category .inner span {
+    margin-right: 0.267rem;
+    display: inline-block;
+    width: 1.693rem;
+    height: 0.813rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 0.813rem;
+    border-radius: 0.133rem;
+    margin-top: 0.133rem;
+    background-color: #E9E9E9; }
+
+.product {
+  background-color: #fff; }
+  .product h1 {
+    text-align: center;
+    padding: 0.533rem;
+    font-size: 2em;
+    color: #000; }
+  .product .price {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #FF9D1E;
+    margin-top: 0.267rem; }
+    .product .price span {
+      float: left;
+      width: 33.333%;
+      height: 0.933rem;
+      line-height: 0.933rem;
+      text-align: center; }
+      .product .price span a {
+        color: #fff; }
+  .product .proBig {
+    padding: 0 2.667rem; }
+  .product .buy tr {
+    height: 1.2rem;
+    border-bottom: 1px solid #ccc; }
+    .product .buy tr img {
+      width: 0.533rem;
+      margin: 0.267rem auto; }
+    .product .buy tr td.red {
+      text-align: right;
+      color: red;
+      margin-right: 0.267rem; }
+
+.comment h2 {
+  height: 0.867rem;
+  background-color: #DBDBDB;
+  text-align: center;
+  line-height: 0.867rem;
+  margin-bottom: 0.133rem; }
+.comment .item {
+  background-color: #fff;
+  padding: 0.2rem 0.267rem;
+  border-bottom: 1px solid #ccc; }
+
+.pro-more {
+  cursor: pointer;
+  background: #fff;
+  padding: 0.267rem;
+  padding-bottom: 0; }
+  .pro-more .btn {
+    display: block;
+    line-height: 0.8rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #F6F6F6; }
+
+.pai {
+  margin: 0.267rem 0 0.667rem 0; }
+
+.register {
+  height: 0.84rem;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none; }
+  .register a {
+    display: block;
+    line-height: 0.84rem;
+    float: left;
+    width: 30%;
+    text-align: center;
+    color: #000;
+    font-weight: 400; }
+  .register .return {
+    width: 39%; }
+    .register .return img {
+      width: 0.4rem;
+      display: inline-block;
+      vertical-align: middle; }
+
+.borderRight {
+  border-right: 1px solid #ccc; }
+
+footer {
+  padding: 0.4rem 0; }
+  footer p {
+    text-align: center; }
+    footer p .red {
+      color: red; }
+
+/*# sourceMappingURL=content.css.map */

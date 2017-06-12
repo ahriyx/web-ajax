@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/brand.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo fl"><img src="imgs/header_logo.png" alt=""></div>
+      <div class="download"><img src="imgs/header_app.png" alt="" class="fr"></div>
+    </header>
+    <section class="search">
+      <div class="input fl">
+        <input type="text" value="请输入你想比较的商品">
+      </div>
+      <div class="btn">
+        <input type="submit" value="搜索">
+      </div>
+    </section>
+    <div class="title"><a href="#">首页></a><a href="#">全部分类></a></div>
+    <div class="paihang">
+      <h2>热门品牌排行</h2>
+    </div>
+    <div class="category">
+    </div>
+    <div class="mt"></div>
+    <div class="register clearfix"><a href="#" class="login borderRight">登录</a><a href="#" class="reg borderRight">注册</a><a href="#" class="return"><img src="imgs/top.png" alt="">返回顶部</a></div>
+    <footer>
+      <p><a class="red">手机APP下载</a>慢慢买手机版<span>--掌上比价平台</span></p>
+      <p>m.manman.buy.com</p>
+    </footer>
+  </body>
+  <script id="template" type="text/html">{{each items as item}}
+    <div class="item">
+      <h2 data-id="{{item.brandTitleId}}">{{item.brandTitle}}<img src="imgs/xia.png" alt="" class="fr"></h2>
+      <div class="navs">		</div>
+    </div>{{/each}}	
+  </script>
+  <script id="template1" type="text/html">
+    <ul class="clearfix">{{each items as item}}
+      <li class="border"><a href="brand-dis.html?brandId={{item.brandId}}">{{item.brandName}}</a></li>{{/each}}		
+    </ul>
+  </script>
+  <script src="js/template.js"></script>
+  <script src="js/zepto.min.js"></script>
+  <script src="js/brand.js"></script>
+</html>

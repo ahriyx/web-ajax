@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/money.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="title">省钱控-最新优惠</h1><a href="#" class="download"><img src="imgs/header_app.png" alt=""></a>
+    </header>
+    <div class="products"></div>
+    <div class="page">
+      <button class="pre">上一页</button>
+      <select class="pageNum"></select>
+      <button class="next">下一页</button>
+    </div>
+    <div class="register clearfix"><a href="#" class="login borderRight">登录</a><a href="#" class="reg borderRight">注册</a><a href="#" class="return"><img src="imgs/top.png" alt="">返回顶部</a></div>
+    <footer>
+      <p><a class="red">手机APP下载</a>慢慢买手机版<span>--掌上比价平台</span></p>
+      <p>m.manman.buy.com</p>
+    </footer>
+    <script id="template1" type="text/html">{{each items as item index}}
+      <div class="item"><a href="product.html?id={{item.productId}}">
+          <div class="pro-img">{{#item.productImgSm}}</div>
+          <div class="pro-name">
+            <h2 class="txt-cut">{{item.productName}}</h2>
+            <h3 class="pro-price one-txt-cut">{{item.productPinkage}}</h3>
+            <h4 class="txt-cut">{{item.productFrom.trim()}}<span class="fr">{{item.productComCount}}</span></h4>
+          </div></a></div>{{/each}}	
+    </script>
+    <script src="js/template.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/money.js"></script>
+  </body>
+</html>

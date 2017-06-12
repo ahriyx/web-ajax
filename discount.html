@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/discount.css">
+  </head>
+  <body>
+  </body>
+  <header>
+    <h1 class="title">国内折扣</h1><a href="#" class="download"><img src="imgs/header_app.png" alt=""></a>
+  </header>
+  <div class="content">
+    <div class="item clearfix">
+    </div>
+  </div>
+  <div class="register clearfix"><a href="#" class="login borderRight">登录</a><a href="#" class="reg borderRight">注册</a><a href="#" class="return"><img src="imgs/top.png" alt="">返回顶部</a></div>
+  <footer>
+    <p><a class="red">手机APP下载</a>慢慢买手机版<span>--掌上比价平台</span></p>
+    <p>m.manman.buy.com</p>
+  </footer>
+  <script id="template1" type="text/html">{{each items as item index}}<a href="dis_content.html?id={{item.productId}}">
+      <div class="bigImg">{{#item.productImg}}</div>
+      <h2><span class="txt-cut">{{item.productName}}</span></h2>
+      <h3 class="one-txt-cut">{{item.productPrice}}</h3>
+      <p>{{item.productFrom}}&nbsp;|&nbsp;{{item.productTime}}</p></a>{{/each}}</script>
+  <script src="js/template.js"></script>
+  <script src="js/zepto.min.js"></script>
+  <script src="js/discount.js"></script>
+</html>

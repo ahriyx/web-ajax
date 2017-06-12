@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo fl"><img src="imgs/header_logo.png" alt=""></div>
+      <div class="download"><img src="imgs/header_app.png" alt="" class="fr"></div>
+    </header>
+    <section class="search">
+      <div class="input fl">
+        <input type="text" value="请输入你想比较的商品">
+      </div>
+      <div class="btn">
+        <input type="submit" value="搜索">
+      </div>
+    </section>
+    <div id="nav" class="nav">
+      <ul class="clearfix">
+      </ul>
+    </div>
+    <div class="price">
+      <div class="price-left fl">超值折扣和推荐</div>
+      <div class="more"><span class="fr"> <a href="#">></a></span></div>
+    </div>
+    <div class="products">
+    </div>
+    <div class="pro-more"><a href="money.html" class="btn"> <strong>更多优惠信息>></strong></a></div>
+    <div class="price pai">
+      <div class="price-left fl">品牌排行</div>
+      <div class="more"><span class="fr"> <a href="#">></a></span></div>
+    </div>
+    <div class="register clearfix"><a href="#" class="login borderRight">登录</a><a href="#" class="reg borderRight">注册</a><a href="#" class="return"><img src="imgs/top.png" alt="">返回顶部</a></div>
+    <footer>
+      <p><a class="red">手机APP下载</a>慢慢买手机版<span>--掌上比价平台</span></p>
+      <p>m.manman.buy.com</p>
+    </footer>
+    <script id="template" type="text/html">{{each items as item}}
+      <li><a href="{{item.titlehref}}"><img src="{{item.img}}"></a>
+        <p>{{item.name}}</p>
+      </li>{{/each}}		
+    </script>
+    <script id="template1" type="text/html">{{each items as item index}}
+      <div class="item"><a href="product.html?id={{item.productId}}">
+          <div class="pro-img"><img src="{{item.productImgSm}}" alt=""></div>
+          <div class="pro-name">
+            <h2 class="txt-cut">{{item.productName}}</h2>
+            <h3 class="pro-price one-txt-cut">{{item.productPinkage}}</h3>
+            <h4 class="txt-cut">{{item.productFrom.trim()}}<span class="fr">{{item.productComCount}}</span></h4>
+          </div></a></div>{{/each}}	
+    </script>
+    <script src="js/template.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+[data-dpr='1'] div {
+  font-size: 16px; }
+
+[data-dpr='2'] div {
+  font-size: 32px; }
+
+[data-dpr="3"] div {
+  font-size: 48px; }
+
+header {
+  height: 1.173rem;
+  background-color: #F4483E;
+  position: relative; }
+  header .title {
+    line-height: 1.173rem;
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    font-weight: 700; }
+  header .download {
+    width: 0.907rem;
+    height: 0.907rem;
+    position: absolute;
+    right: 0.267rem;
+    top: 0.133rem; }
+
+.main {
+  padding: 0.36rem 0 0.8rem; }
+  .main .item {
+    width: 30%;
+    margin-left: 2.5%;
+    margin-bottom: 2.5%;
+    height: 2.027rem;
+    padding-top: 0.133rem;
+    border: 1px solid #ccc;
+    float: left;
+    background-color: #fff;
+    text-align: center; }
+    .main .item .small {
+      width: 1.36rem;
+      height: 1.36rem;
+      margin: 0 auto; }
+
+.register {
+  height: 0.84rem;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none; }
+  .register a {
+    display: block;
+    line-height: 0.84rem;
+    float: left;
+    width: 30%;
+    text-align: center;
+    color: #000;
+    font-weight: 400; }
+  .register .return {
+    width: 39%; }
+    .register .return img {
+      width: 0.4rem;
+      display: inline-block;
+      vertical-align: middle; }
+
+.borderRight {
+  border-right: 1px solid #ccc; }
+
+footer {
+  padding: 0.4rem 0; }
+  footer p {
+    text-align: center; }
+    footer p .red {
+      color: red; }
+
+/*# sourceMappingURL=kfc.css.map */

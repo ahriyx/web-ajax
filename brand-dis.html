@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/brand-dis.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo fl"><img src="imgs/header_logo.png" alt=""></div>
+      <div class="download"><img src="imgs/header_app.png" alt="" class="fr"></div>
+    </header>
+    <section class="search">
+      <div class="input fl">
+        <input type="text" value="请输入你想比较的商品">
+      </div>
+      <div class="btn">
+        <input type="submit" value="搜索">
+      </div>
+    </section>
+    <div class="title"><a href="#">首页></a><a href="#">全部分类></a></div>
+    <div class="paihang">
+      <h2>热门品牌排行</h2>
+    </div>
+    <div class="products">
+      <div class="inner"></div>
+    </div>
+    <div class="paihang">
+      <h2>热门品牌销量排行</h2>
+    </div>
+    <div class="comment">
+      <div class="inner"></div>
+    </div>
+    <div class="paihang">
+      <h2>热门品牌最新评论</h2>
+    </div>
+    <div class="new-comment">
+      <div class="inner"></div>
+    </div>
+    <script id="template1" type="text/html">{{each items as item index}}
+      <div class="item">
+        <h2><span>{{index+1}}</span><span class="name">{{item.brandName}}</span></h2>
+        <h3><span>{{item.brandInfo}}</span></h3><img src="imgs/you.png" alt="">
+      </div>{{/each}}	
+    </script>
+    <script id="template2" type="text/html">{{each items as item index}}
+      <div class="pro clearfix">
+        <div class="img-left fl">{{#item.productImg}}</div>
+        <div class="con">
+          <h2>{{item.productName}}</h2>
+          <p class="price">{{item.productPrice}}</p>
+          <p>{{item.productQuote}} {{item.productCom}}</p>
+        </div>
+      </div>{{/each}}	
+    </script>
+    <script id="template3" type="text/html">{{each items as item index}}
+      <div class="li">
+        <div class="pro">
+          <div class="img-left">{{#item.productImg}}</div>
+          <h2>{{item.productName}}</h2>
+        </div>
+        <div class="item">
+          <h2><span>{{item.comName}}</span><span class="fr">{{item.comTime}}</span></h2>
+          <p>{{item.comContent}}</p>
+        </div>
+      </div>{{/each}}	
+    </script>
+    <script src="js/template.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/brand-dis.js"></script>
+  </body>
+</html>

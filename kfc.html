@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/kfc.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="title">优惠券</h1><a href="#" class="download"><img src="imgs/header_app.png" alt=""></a>
+    </header>
+    <div class="main clearfix">
+    </div>
+    <div class="register clearfix"><a href="#" class="login borderRight">登录</a><a href="#" class="reg borderRight">注册</a><a href="#" class="return"><img src="imgs/top.png" alt="">返回顶部</a></div>
+    <footer>
+      <p><a class="red">手机APP下载</a>慢慢买手机版</p>
+      <p>m.manman.buy.com</p>
+    </footer>
+    <script id="template" type="text/html">{{each items as item index}}
+      <div class="item"><a href="kfcList.html?id={{item.couponId}}">
+          <div class="small"><img src="{{item.couponImg}}" alt=""></div>
+          <p>{{item.couponTitle}}</p></a></div>{{/each}}
+    </script>
+    <script src="js/template.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/kfc.js"></script>
+  </body>
+</html>

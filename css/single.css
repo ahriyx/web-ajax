@@ -1,0 +1,117 @@
+[data-dpr='1'] div {
+  font-size: 16px; }
+
+[data-dpr='2'] div {
+  font-size: 32px; }
+
+[data-dpr="3"] div {
+  font-size: 48px; }
+
+body {
+  background: #F7F7F7; }
+
+header {
+  height: 1.173rem;
+  background-color: #FF841D;
+  position: relative; }
+  header .title {
+    line-height: 1.173rem;
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    font-weight: 700; }
+  header .download {
+    width: 0.907rem;
+    height: 0.907rem;
+    position: absolute;
+    right: 0.267rem;
+    top: 0.133rem; }
+
+nav {
+  height: 0.96rem;
+  border-bottom: 1px solid #bbb;
+  background-color: #fff;
+  position: relative; }
+  nav li {
+    padding: 0 0.9rem;
+    line-height: 0.96rem;
+    float: left;
+    font-size: 1.5em; }
+    nav li:last-child {
+      border-right: 1px solid #ccc; }
+    nav li a {
+      color: #000; }
+  nav .list {
+    position: absolute;
+    left: 0;
+    top: 0.97rem;
+    display: none;
+    width: 100%;
+    background-color: #fff; }
+    nav .list div {
+      padding-left: 0.2rem;
+      line-height: 0.96rem;
+      border-bottom: 1px solid #ccc; }
+  nav .show {
+    display: block; }
+
+.products .inner .item {
+  width: 47%;
+  height: 6.667rem;
+  margin-top: 0.267rem;
+  float: left;
+  margin-left: 2%;
+  background-color: #fff; }
+  .products .inner .item .imag {
+    display: block;
+    padding: 0.2rem; }
+    .products .inner .item .imag img {
+      height: 4.667rem; }
+  .products .inner .item .name {
+    padding: 0 0.133rem; }
+  .products .inner .item p {
+    margin-top: 0.133rem;
+    font-size: 1em;
+    padding: 0 0.133rem; }
+    .products .inner .item p span {
+      color: #F75200; }
+    .products .inner .item p a.fr {
+      display: block;
+      background-color: #FF9501;
+      border: 1px solid #FF8000;
+      border-radius: 0.133rem;
+      padding: 0 0.227rem;
+      color: #fff; }
+
+.register {
+  margin-top: 0.267rem;
+  height: 0.84rem;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none; }
+  .register a {
+    display: block;
+    line-height: 0.84rem;
+    float: left;
+    width: 30%;
+    text-align: center;
+    color: #000;
+    font-weight: 400; }
+  .register .return {
+    width: 39%; }
+    .register .return img {
+      width: 0.4rem;
+      display: inline-block;
+      vertical-align: middle; }
+
+.borderRight {
+  border-right: 1px solid #ccc; }
+
+footer {
+  padding: 0.4rem 0; }
+  footer p {
+    text-align: center; }
+    footer p .red {
+      color: red; }
+
+/*# sourceMappingURL=single.css.map */

@@ -1,0 +1,91 @@
+[data-dpr='1'] div {
+  font-size: 16px; }
+
+[data-dpr='2'] div {
+  font-size: 32px; }
+
+[data-dpr="3"] div {
+  font-size: 48px; }
+
+header {
+  height: 1.173rem;
+  background-color: #F4483E;
+  position: relative; }
+  header .title {
+    line-height: 1.173rem;
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    font-weight: 700; }
+  header .download {
+    width: 0.907rem;
+    height: 0.907rem;
+    position: absolute;
+    right: 0.267rem;
+    top: 0.133rem; }
+
+.title > h2 {
+  height: 0.933rem;
+  line-height: 0.933rem;
+  text-align: center; }
+
+.products {
+  background-color: #fff; }
+  .products .item {
+    padding: 0.267rem 0;
+    height: 3.373rem;
+    border-bottom: 1px solid #ccc; }
+    .products .item a {
+      display: block; }
+  .products .pro-img {
+    width: 3.107rem;
+    height: 3.373rem;
+    float: left;
+    padding: 0 0.3rem; }
+  .products .pro-name {
+    margin-left: 3.607rem;
+    padding-right: 0.2rem; }
+    .products .pro-name h2 {
+      color: #000; }
+    .products .pro-name h3 {
+      color: red;
+      padding-bottom: 0.2rem; }
+    .products .pro-name h4 {
+      color: #F0932F;
+      padding-top: 0.4rem; }
+    .products .pro-name h2, .products .pro-name h3, .products .pro-name h4 {
+      padding-left: 0.2em; }
+    .products .pro-name span {
+      margin-right: 0.267rem; }
+
+.register {
+  height: 0.84rem;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none; }
+  .register a {
+    display: block;
+    line-height: 0.84rem;
+    float: left;
+    width: 30%;
+    text-align: center;
+    color: #000;
+    font-weight: 400; }
+  .register .return {
+    width: 39%; }
+    .register .return img {
+      width: 0.4rem;
+      display: inline-block;
+      vertical-align: middle; }
+
+.borderRight {
+  border-right: 1px solid #ccc; }
+
+footer {
+  padding: 0.4rem 0; }
+  footer p {
+    text-align: center; }
+    footer p .red {
+      color: red; }
+
+/*# sourceMappingURL=kfcList.css.map */
