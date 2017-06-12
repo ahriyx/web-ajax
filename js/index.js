@@ -5,7 +5,7 @@
 
 	// 通过ajax进行获取
 	$.ajax({
-		url: 'http://localhost:9090/api/getindexmenu',
+		url: 'http://101.81.189.170:9090/api/getindexmenu',
 		type: 'get',
 		dataType: 'json',
 		success : function (data) {
@@ -51,7 +51,7 @@
 (function () {
 
 	$.ajax({
-			url: 'http://localhost:9090/api/getmoneyctrl',
+			url: 'http://101.81.189.170:9090/api/getmoneyctrl',
 			type: 'get',
 			dataType: 'json',
 			success : function (data) {
